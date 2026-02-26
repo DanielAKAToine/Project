@@ -1,0 +1,84 @@
+.register-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    min-height: 80vh;
+}
+
+
+.register-container {
+    background-color: var(--white);
+    padding: 40px;
+    border-radius: 30px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+
+.register-container h1 {
+    margin-bottom: 20px;
+    letter-spacing: -1;
+    font-weight: 800;
+    color: var(--header-bg);
+}
+
+
+.register-container p {
+    margin-bottom: 30px;
+    color: var(--primary-text);
+    font-size: 0.9rem;
+}
+
+
+#registerForm input {
+    width: 100%;
+    padding: 12px 20px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    border: 2px solid #edf2f7;
+    background-color: #f8fafc;
+    font-family: inherit;
+    transition: all 0.3s ease;
+}
+
+
+#registerForm input:focus {
+    outline: none;
+    border-color: var(--navi);
+    background-color: var(--white);
+    box-shadow: 0 0 0 4px rgba(129, 212, 250, 0.2);
+}
+
+
+.register-button {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+
+.register-buttons button {
+    flex: 1;
+    padding: 12px;
+    font-size: 1rem;
+}
+
+
+.btn-reset {
+    background-color: #ffab91 !important;
+    color: #5d4037 !important;
+}
+
+
+.btn-reset:hover {
+    background-color: #ff8a65 !important;
+}
+
+
+input[type="date"] {
+    cursor: pointer;
+    color: var(--primary-text);
+}

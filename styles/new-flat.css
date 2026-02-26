@@ -1,0 +1,127 @@
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 60px 20px;
+    min-height: 80vh;
+}
+
+
+#flatForm {
+    background-color: var(--white);
+    padding: 40px;
+    border-radius: 30px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 700px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 25px;
+}
+
+
+#flatForm h1 {
+    grid-column: span 2;
+    text-align: center;
+    color: var(--header-bg);
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+
+.full.width {
+    grid-column: span 2;
+}
+
+
+#flatForm label {
+    font-weight: 700;
+    color: var(--header-bg);
+    font-size: 0.85rem;
+    margin-bottom: 8px;
+}
+
+
+#flatForm input:not([type="checkbox"]) {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 12px;
+    border: 2px solid #edf2f7;
+    background-color: #f8fafc;
+    transition: all 0.3s ease;
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
+
+#flatForm input:focus {
+    outline: none;
+    border-color: var(--navi);
+    background-color: #ffffff;
+    box-shadow: 0 0 0 4px rgba(129, 212, 250, 0.2);
+}
+
+
+.input-group.full-width:last-of-type {
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    padding: 10px 0;
+}
+
+
+.checkbox-label {
+    margin-bottom: 0 !important;
+    cursor: pointer;
+}
+
+
+.checkbox-input {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+
+#flatForm button {
+    grid-column: span 2;
+    margin-top: 20px;
+    padding: 16px;
+    background-color: var(--header-bg);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+#flatForm button:hover {
+    background-color: var(--primary-text);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+@media (max-width: 600px) {
+    #flatForm {
+        grid-template-columns: 1fr;
+    }
+
+    .full.width {
+        grid-column: span 1;
+    }
+}

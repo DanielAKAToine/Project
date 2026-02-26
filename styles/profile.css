@@ -1,0 +1,178 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#viewSection,
+#updateProfile {
+    background-color: var(--white);
+    padding: 40px;
+    border-radius: 30px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+
+h1,
+h3 {
+    color: var(--header-bg);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 30px
+}
+
+
+#viewSection p {
+    font-size: 1.1rem;
+    color: #444444;
+    margin: 15px 0;
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
+    text-align: left;
+}
+
+
+#viewSection span {
+    font-weight: bold;
+    color: var(--header-bg);
+}
+
+
+#updateForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+#updateForm input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 12px;
+    border: 2px solid #edf2f7;
+    background-color: #f8fafc;
+    box-sizing: border-box;
+}
+
+
+#updateForm input:focus {
+    outline: none;
+    border-color: var(--navi);
+    background-color: white;
+}
+
+
+#editBtn,
+#updateForm button[type="submit"] {
+    background-color: var(--header-bg);
+    color: var(--white);
+    border: none;
+    border-radius: 50px;
+    padding: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+    width: 100%;
+}
+
+
+#editBtn:hover,
+#updateForm button[type="submit"]:hover {
+    background-color: var(--primary-text);
+    transform: scale(1.02);
+}
+
+
+#cancelBtn {
+    background-color: #e2e8f0;
+    color: #4a5568;
+    border: none;
+    border-radius: 50px;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+.user-flat-item {
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    border-left: 5px solid var(--header-bg);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    text-align: left;
+}
+
+
+#myFlatsList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    margin: 20px auto;
+}
+
+
+.user-flat-item {
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    border-left: 5px solid var(--header-bg);
+    text-align: left;
+    transition: transform 0.2s;
+}
+
+
+.flat-item-card {
+    background-color: white !important;
+    padding: 25px;
+    border-radius: 25px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+    box-sizing: border-box;
+    text-align: left;
+    transition: transform 0.3s ease;
+    border-left: 6px solid #2c3e50;
+}
+
+
+.flat-item-card:hover {
+    transform: translateY(-5px);
+}
+
+
+.flat-item-card h4 {
+    margin: 0 0 10px 0;
+    color: var(--header-bg);
+    font-size: 1.3rem;
+    text-transform: capitalize;
+}
+
+
+.flat-item-card p {
+    margin: 6px 0;
+    font-size: 0.9rem;
+    color: #555555;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+
+.price-badge {
+    display: inline-block;
+    background-color: #f1f3f5;
+    color: #2c3e50;
+    padding: 6px 15px;
+    border-radius: 50px;
+    font-weight: bold;
+    margin-top: 10px;
+}
