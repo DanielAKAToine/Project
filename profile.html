@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rend Ease</title>
+    <link rel="stylesheet" href="styles/app.css">
+    <link rel="stylesheet" href="styles/profile.css">
+
+</head>
+
+<body>
+    <header id="mainHeader"></header>
+    <hr>
+
+    <h1>USER PROFILE</h1>
+
+    <div id="viewSection">
+        <p>Name: <span id="viewName"></span></p>
+        <p>Email: <span id="viewEmail"></span></p>
+        <p>Birth Date: <span id="viewBirthDate"></span></p>
+        <button id="editBtn">Edit Profile</button>
+    </div>
+    <div id="updateProfile" style="display: none;">
+        <h2>Update Profile</h2>
+        <form id="updateForm">
+            <input type="text" id="upName" placeholder="Full Name" required>
+            <input type="email" id="upEmail" disabled>
+            <input type="date" id="upBirthDate" required>
+            <input type="password" id="upPassword" placeholder="New Password (leave bllank to keep current)">
+            <input type="password" id="upConfirmPassword" placeholder="Confirm New Password">
+            <button type="submit">Update Profile</button>
+            <button type="button" id="cancelBtn">Cancel</button>
+        </form>
+    </div>
+    <hr>
+    <h3>My Flats!</h3>
+    <div id="myFlatsList"></div>
+
+    <script src="scripts/data.js"></script>
+    <script src="scripts/home.js"></script>
+</body>
+
+</html>

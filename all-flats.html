@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rend Ease</title>
+    <link rel="stylesheet" href="styles/app.css">
+    <link rel="stylesheet" href="styles/all-flats.css">
+</head>
+
+<body>
+    <header id="mainHeader"></header>
+    <hr>
+    <div class="main-content">
+        <h1>All FLATS</h1>
+        <div class="filters">
+            <input type="text" id="filterCity" placeholder="Filter by City">
+            <input type="number" id="minPrice" placeholder="Min Price">
+            <input type="number" id="maxPrice" placeholder="Max Price">
+            <button onclick="renderTable()">Apply Filters</button>
+        </div>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th onclick="sortTable('city')">City</th>
+                        <th onclick="sortTable('streetname')">Street Name</th>
+                        <th onclick="sortTable('price')">Price</th>
+                        <th onclick="sortTable('area')">Area (m²)</th>
+                        <th onclick="sortTable('yearbuilt')">Year Built</th>
+                        <th>AC</th>
+                        <th>Available</th>
+                    </tr>
+                </thead>
+                <tbody id="flatsTableBody">
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+    <script src="scripts/data.js"></script>
+    <script src="scripts/home.js"></script>
+</body>
+
+</html>

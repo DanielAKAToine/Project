@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rend Ease</title>
+    <link rel="stylesheet" href="styles/app.css">
+    <link rel="stylesheet" href="styles/home.css">
+
+</head>
+
+<body>
+    <header id="mainHeader"></header>
+    <hr>
+    <h1>HOME PAGE</h1>
+    <div id="authContent" style="display: none;">
+        <h1>My favourite Flats!</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>City</th>
+                    <th>Street Name</th>
+                    <th>Price</th>
+                    <th>Area (m²)</th>
+                    <th>Year Built</th>
+                </tr>
+            </thead>
+            <tbody id="favouriteFlatsTableBody">
+            </tbody>
+        </table>
+    </div>
+    <div id="guestContent" style="display: none;" class="welcome-container">
+        <div class="welcome-image"></div>
+        <h1>Welcome to Rend Ease!</h1>
+        <p> Please <a href="./login.html">LOGIN</a> or <a href="./register.html">REGISTER</a> to see your favourite
+            flats.</p>
+    </div>
+
+    <script src="scripts/data.js"></script>
+    <script src="scripts/home.js"></script>
+</body>
+
+</html>

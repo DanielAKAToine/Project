@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rend Ease</title>
+    <link rel="stylesheet" href="styles/app.css">
+    <link rel="stylesheet" href="styles/new-flat.css">
+
+</head>
+
+<body>
+    <header id="mainHeader"></header>
+    <hr>
+    <div class="main-content">
+        <form id="flatForm">
+            <h1>NEW FLAT</h1>
+
+            <div class="input-group">
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city" required>
+            </div>
+            <div class="input-group">
+                <label for="price">Price:</label>
+                <input type="number" id="price" name="price" required>
+            </div>
+            <div class="input-group">
+                <label for="area">Area (m²):</label>
+                <input type="number" id="area" name="area" required>
+            </div>
+            <div class="input-group">
+                <label for="streetname">Street Name:</label>
+                <input type="text" id="streetname" name="streetname" required>
+            </div>
+            <div class="input-group">
+                <label for="housenumber">House Number:</label>
+                <input type="text" id="housenumber" name="housenumber" required>
+            </div>
+            <div class="input-group">
+                <label for="yearbuilt">Year Built:</label>
+                <input type="number" id="yearbuilt" name="yearbuilt" required>
+            </div>
+            <div class="input-group full-width">
+                <label for="dateavailable">Date Available:</label>
+                <input type="date" id="dateavailable" name="dateavailable" required>
+            </div>
+            <div class="input-group full-width">
+                <label for="ac" class="checkbox-label full-width">Air Conditioning:</label>
+                <input type="checkbox" id="ac" name="ac" class="checkbox-input">
+            </div>
+            <button type="submit">Add Flat</button>
+        </form>
+    </div>
+
+    <script src="scripts/data.js"></script>
+    <script src="scripts/home.js"></script>
+</body>
+
+</html>
